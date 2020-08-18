@@ -1,0 +1,152 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('back.jpg');
+    background-size: cover;
+    
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+.image{
+    font-family: 'Raleway', sans-serif;
+    background-size: cover;
+    background-image: url('img.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    min-height: 60%;
+    min-width: 24%;
+    background-blend-mode: multiply;
+    opacity: 0.7;
+    
+}
+
+#profile{
+    flex-grow: 1;
+    margin: 20px;
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    
+}
+#legend{
+    margin: 20px;
+    color: white;
+    font-size: smaller;
+}
+
+
+form, .fields, .select, .bio, .gender, .check, .buttons{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(128, 120, 120);
+}
+
+form{
+    padding: 40px 70px;
+}
+
+.fields, .select, .bio, .gender, .check, .buttons{
+    padding: 4px;
+
+}
+
+
+.fields input{
+    width: 400px;
+    height: 20px;
+    margin: 10px auto;
+    border: none;
+    border-bottom: 1px solid grey;
+    color: black;
+    outline: none;
+}
+
+.fields label, #gender-label, .bio label, #check-label, .select label{
+   color: rgb(7, 0, 0);
+   font-weight: bold;
+}
+
+
+
+
+.options{
+    margin-top: 10px;
+}
+
+.options label{
+    margin: auto 8px;
+}
+
+
+select{
+    margin: 10px auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+textarea{
+    margin: 10px auto;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    resize: none;
+}
+
+
+
+.options input{
+    background: rgb(11,108,142);
+    background: linear-gradient(36deg, rgba(11,108,142,1) 0%, rgba(57,5,100,1) 85%, rgba(4,63,84,1) 100%);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 40px;
+    margin: 1px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+@media (max-width: 800px){
+    .register{
+        flex-direction: column;
+
+    }
+
+    .image{
+       
+        min-height: 20%;
+        min-width: 100%;
+        position: absolute;
+        top: 0px;
+    
+    }
+
+    form{
+        z-index: 1;
+        position: absolute;
+        top: 110px;
+    }
+
+}
+
+
